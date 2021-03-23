@@ -1,6 +1,6 @@
 <?php
 function openDb() {
-    $db = new PDO('mysql:host=localhost;port=3306;dbname=shoppinglist;charset=utf8', 'root', '');
+    $db = new PDO('mysql:host=localhost;port=3306;dbname=shoppinglist;charset=utf8', 'username', 'password');
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     return $db;
 }
