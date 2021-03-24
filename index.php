@@ -1,11 +1,6 @@
 <?php
-require_once 'inc/functions.php';
-require_once 'inc/headers.php';
-
-
-if($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
-    return 0;
-}
+require_once './inc/functions.php';
+require_once './inc/headers.php';
 
 
 try {
