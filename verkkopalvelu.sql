@@ -32,4 +32,4 @@ insert into tuote(tuotenimi, kuvaus, hinta, trnro) values ('Kahvi', 'Musta kahvi
 ('Pääsiäisleivos','Keväisesti koristeltu leivos.',4.20,4),('Berliininmunkki','Kuorrutettu hillomunkki.',3.10,4),
 ('Voisilmäpulla','Perinteinen voisilmäpulla',2.20,4);
 
-
+ALTER TABLE tuote ADD kuva varchar(255);
