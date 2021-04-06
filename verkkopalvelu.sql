@@ -33,3 +33,5 @@ insert into tuote(tuotenimi, kuvaus, hinta, trnro) values ('Kahvi', 'Musta kahvi
 ('Voisilmäpulla','Perinteinen voisilmäpulla',2.20,4);
 
 ALTER TABLE tuote ADD kuva varchar(255);
+
+UPDATE tuote SET kuva = 'kahvi_place.jpg';
