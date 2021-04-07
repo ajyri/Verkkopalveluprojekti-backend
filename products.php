@@ -5,9 +5,9 @@ require_once './inc/headers.php';
 try
 {
 
-        $id = filter_input(INPUT_GET, 'trnimi', FILTER_SANITIZE_STRING);
+        $id = filter_input(INPUT_GET, 'trnro', FILTER_SANITIZE_STRING);
         $db = openDb();
-        selectAsJson($db, "SELECT trnimi FROM tuoteryhma where trnro = $id");
+        selectAsJson($db,"SELECT * FROM tuote where trnro = $id");
 
 }
 catch(PDOException $pdoex){

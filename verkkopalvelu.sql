@@ -40,6 +40,8 @@ UPDATE tuote SET kuva = 'berliininmunkki.jpg' WHERE tuotenimi = 'Berliininmunkki
 UPDATE tuote SET kuva = 'paasiaisleivos.jpg' WHERE tuotenimi = 'Pääsiäisleivos';
 UPDATE tuote SET kuva = 'voisilmapulla.jpg' WHERE tuotenimi = 'Voisilmäpulla';
 UPDATE tuote SET kuva = 'brownie.jpg' WHERE tuotenimi = 'Brownie';
+UPDATE tuote SET kuva = 'viineri.jpg' WHERE tuotenimi = 'Viineri';
+UPDATE tuote SET kuva = 'cookie.jpg' WHERE tuotenimi = 'Chocolate Chip Cookie';
 UPDATE tuote SET kuva = 'mustakahvi.jpg' WHERE tuotenimi = 'Kahvi';
 UPDATE tuote SET kuva = 'espresso.jpg' WHERE tuotenimi = 'Espresso';
 UPDATE tuote SET kuva = 'cappuccino.jpg' WHERE tuotenimi = 'Cappuccino';
@@ -52,3 +54,9 @@ UPDATE tuote SET kuva = 'vihreatee.jpg' WHERE tuotenimi = 'Vihreä tee';
 UPDATE tuote SET kuva = 'valkoinentee.jpg' WHERE tuotenimi = 'Valkoinen tee';
 UPDATE tuote SET kuva = 'oolong.jpg' WHERE tuotenimi = 'Oolong';
 UPDATE tuote SET kuva = 'rooibos.jpg' WHERE tuotenimi = 'Rooibos';
+UPDATE tuote SET kuva = 'jaavesi.jpg' WHERE tuotenimi = 'Jäävesi';
+UPDATE tuote SET kuva = 'kaakao.jpg' WHERE tuotenimi = 'Kaakao';
+UPDATE tuote SET kuva = 'jaffa.jpg' WHERE tuotenimi = 'Jaffa';
+UPDATE tuote SET kuva = 'cola.jpg' WHERE tuotenimi = 'Cola';
+UPDATE tuote SET kuva = 'omenamehu.jpg' WHERE tuotenimi = 'Omenamehu';
+UPDATE tuote SET kuva = 'appelsiinimehu.jpg' WHERE tuotenimi = 'Appelsiinimehu';
