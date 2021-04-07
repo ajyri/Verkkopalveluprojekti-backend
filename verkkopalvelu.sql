@@ -37,7 +37,7 @@ ALTER TABLE tuote ADD kuva varchar(255);
 UPDATE tuote SET kuva = 'kahvi_place.jpg';
 
 UPDATE tuote SET kuva = 'berliininmunkki.jpg' WHERE tuotenimi = 'Berliininmunkki';
-UPDATE tuote SET kuva = 'paasiasleivos.jpg' WHERE tuotenimi = 'Pääsiäisleivos';
+UPDATE tuote SET kuva = 'paasiaisleivos.jpg' WHERE tuotenimi = 'Pääsiäisleivos';
 UPDATE tuote SET kuva = 'voisilmapulla.jpg' WHERE tuotenimi = 'Voisilmäpulla';
 UPDATE tuote SET kuva = 'brownie.jpg' WHERE tuotenimi = 'Brownie';
 UPDATE tuote SET kuva = 'viineri.jpg' WHERE tuotenimi = 'Viineri';
