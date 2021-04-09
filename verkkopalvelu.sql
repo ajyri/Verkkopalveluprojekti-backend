@@ -75,7 +75,7 @@ UPDATE tuote SET kuvaus = 'Pullataikinaan leivottu herkkuviineri, jossa pääll�
 UPDATE tuote SET kuvaus = 'Amerikkalaisten leivonnaisten klassikko. Iso, maitosuklaahippuja sisältävä keksi, noin 80 g. Laktoositon.' WHERE tuotenimi = 'Chocolate Chip Cookie';
 UPDATE tuote SET kuvaus = 'Pehmeän makuinen, keväisesen värikkäästi koristeltu leivos., noin 80 g. Laktoositon.' WHERE tuotenimi = 'Pääsiäisleivos';
 UPDATE tuote SET kuvaus = 'Berliinimunkki on lasten ja aikuisten suosikkimunkki. Päällä mansikkainen kuorrute ja sisällä vadelmahillo, noin 80 g.' WHERE tuotenimi = 'Berliininmunkki';
-UPDATE tuote SET kuvaus = 'Maistuvasta pullataikinasta valmistettu pulla, jonka kruunaa voisilmä keskellä, kuorrutettuna voi, noin 80 g.' WHERE tuotenimi = 'Voisilmäpulla';
+UPDATE tuote SET kuvaus = 'Maistuvasta pullataikinasta valmistettu pulla, jonka kruunaa voisilmä keskellä, kuorrutettuna voi-sokeriseoksella, noin 80 g.' WHERE tuotenimi = 'Voisilmäpulla';
 -- Muut juomat:
 UPDATE tuote SET kuvaus = 'Täyteläinen Fazer kaakao pehmeäksi vaahdotetulla maidolla, noin 2 dl. Laktoositon. Gluteeniton. ' WHERE tuotenimi = 'Kaakao';
 UPDATE tuote SET kuvaus = 'Maailman parasta, suomalaista pohjavettä ja jääpaloja, noin 4 dl.' WHERE tuotenimi = 'Jäävesi';
