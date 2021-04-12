@@ -73,7 +73,7 @@ UPDATE tuote SET kuvaus = 'Espressoa, maitoa, suklaamakusiirappia ja jääpaloja
 UPDATE tuote SET kuvaus = 'Amerikkalaistyylinen, kostean mehevä suklaaleivonnainen, josta leikataan perinteisesti neliönmuotoisia annospaloja, noin 80 g.' WHERE tuotenimi = 'Brownie';
 UPDATE tuote SET kuvaus = 'Pullataikinaan leivottu herkkuviineri, jossa päällä reilusti hilloa. Pehmeä vaniljakreemi ja pomadakoristelu kruunaa viimeistelyn, noin 100 g. Laktoositon.' WHERE tuotenimi = 'Viineri';
 UPDATE tuote SET kuvaus = 'Amerikkalaisten leivonnaisten klassikko. Iso, maitosuklaahippuja sisältävä keksi, noin 80 g. Laktoositon.' WHERE tuotenimi = 'Chocolate Chip Cookie';
-UPDATE tuote SET kuvaus = 'Pehmeän makuinen, keväisesen värikkäästi koristeltu leivos., noin 80 g. Laktoositon.' WHERE tuotenimi = 'Pääsiäisleivos';
+UPDATE tuote SET kuvaus = 'Pehmeän makuinen, keväisen värikkäästi koristeltu leivos., noin 80 g. Laktoositon.' WHERE tuotenimi = 'Pääsiäisleivos';
 UPDATE tuote SET kuvaus = 'Berliinimunkki on lasten ja aikuisten suosikkimunkki. Päällä mansikkainen kuorrute ja sisällä vadelmahillo, noin 80 g.' WHERE tuotenimi = 'Berliininmunkki';
 UPDATE tuote SET kuvaus = 'Maistuvasta pullataikinasta valmistettu pulla, jonka kruunaa voisilmä keskellä, kuorrutettuna voi-sokeriseoksella, noin 80 g.' WHERE tuotenimi = 'Voisilmäpulla';
 -- Muut juomat:
@@ -81,7 +81,7 @@ UPDATE tuote SET kuvaus = 'Täyteläinen Fazer kaakao pehmeäksi vaahdotetulla m
 UPDATE tuote SET kuvaus = 'Maailman parasta, suomalaista pohjavettä ja jääpaloja, noin 4 dl.' WHERE tuotenimi = 'Jäävesi';
 UPDATE tuote SET kuvaus = 'Hartwall Jaffa on aito ja alkuperäinen suomalainen raikas appelsiinimakuinen virvoitusjuoma jääpaloilla, 5 dl. Laktoositon. Gluteeniton.' WHERE tuotenimi = 'Jaffa';
 UPDATE tuote SET kuvaus = 'Suomen ja koko maailman ylivoimaisesti suosituinta virvoitusjuomaa Coca-Colaa sekä jääpaloja, 5 dl. Laktoositon. Gluteeniton.' WHERE tuotenimi = 'Cola';
-UPDATE tuote SET kuvaus = 'Herkullinen omenamehu tuorepuristetuista, lujonnomukaisesti viljellyistä omenoista, 2 dl. Laktoositon. Gluteeniton.' WHERE tuotenimi = 'Omenamehu';
+UPDATE tuote SET kuvaus = 'Herkullinen omenamehu tuorepuristetuista, luonnomukaisesti viljellyistä omenoista, 2 dl. Laktoositon. Gluteeniton.' WHERE tuotenimi = 'Omenamehu';
 UPDATE tuote SET kuvaus = 'Raikas sekä luonnonmukainen hedelmämehu tuorepuristetuista appelsiineista, 2 dl. Laktoositon. Gluteeniton.' WHERE tuotenimi = 'Appelsiinimehu';
 -- Teet:
 UPDATE tuote SET kuvaus = 'Musta teesekoitus, joka maustetaan bergamottiöljyllä. Eräs maailman suosituimmista teesekoituksista, noin 2 dl. Laktoositon. Gluteeniton.' WHERE tuotenimi = 'Earl Grey';
