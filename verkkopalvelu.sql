@@ -73,7 +73,7 @@ UPDATE tuote SET kuvaus = 'Espressoa, maitoa, suklaamakusiirappia ja jääpaloja
 UPDATE tuote SET kuvaus = 'Amerikkalaistyylinen, kostean mehevä suklaaleivonnainen, josta leikataan perinteisesti neliönmuotoisia annospaloja, noin 80 g.' WHERE tuotenimi = 'Brownie';
 UPDATE tuote SET kuvaus = 'Pullataikinaan leivottu herkkuviineri, jossa päällä reilusti hilloa. Pehmeä vaniljakreemi ja pomadakoristelu kruunaa viimeistelyn, noin 100 g. Laktoositon.' WHERE tuotenimi = 'Viineri';
 UPDATE tuote SET kuvaus = 'Amerikkalaisten leivonnaisten klassikko. Iso, maitosuklaahippuja sisältävä keksi, noin 80 g. Laktoositon.' WHERE tuotenimi = 'Chocolate Chip Cookie';
-UPDATE tuote SET kuvaus = 'Pehmeän makuinen, keväisesen värikkäästi koristeltu leivos., noin 80 g. Laktoositon.' WHERE tuotenimi = 'Pääsiäisleivos';
+UPDATE tuote SET kuvaus = 'Pehmeän makuinen, keväisen värikkäästi koristeltu leivos., noin 80 g. Laktoositon.' WHERE tuotenimi = 'Pääsiäisleivos';
 UPDATE tuote SET kuvaus = 'Berliinimunkki on lasten ja aikuisten suosikkimunkki. Päällä mansikkainen kuorrute ja sisällä vadelmahillo, noin 80 g.' WHERE tuotenimi = 'Berliininmunkki';
 UPDATE tuote SET kuvaus = 'Maistuvasta pullataikinasta valmistettu pulla, jonka kruunaa voisilmä keskellä, kuorrutettuna voi-sokeriseoksella, noin 80 g.' WHERE tuotenimi = 'Voisilmäpulla';
 -- Muut juomat:
