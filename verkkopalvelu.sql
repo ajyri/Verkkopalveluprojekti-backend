@@ -81,7 +81,7 @@ UPDATE tuote SET kuvaus = 'Täyteläinen Fazer kaakao pehmeäksi vaahdotetulla m
 UPDATE tuote SET kuvaus = 'Maailman parasta, suomalaista pohjavettä ja jääpaloja, noin 4 dl.' WHERE tuotenimi = 'Jäävesi';
 UPDATE tuote SET kuvaus = 'Hartwall Jaffa on aito ja alkuperäinen suomalainen raikas appelsiinimakuinen virvoitusjuoma jääpaloilla, 5 dl. Laktoositon. Gluteeniton.' WHERE tuotenimi = 'Jaffa';
 UPDATE tuote SET kuvaus = 'Suomen ja koko maailman ylivoimaisesti suosituinta virvoitusjuomaa Coca-Colaa sekä jääpaloja, 5 dl. Laktoositon. Gluteeniton.' WHERE tuotenimi = 'Cola';
-UPDATE tuote SET kuvaus = 'Herkullinen omenamehu tuorepuristetuista, lujonnomukaisesti viljellyistä omenoista, 2 dl. Laktoositon. Gluteeniton.' WHERE tuotenimi = 'Omenamehu';
+UPDATE tuote SET kuvaus = 'Herkullinen omenamehu tuorepuristetuista, luonnomukaisesti viljellyistä omenoista, 2 dl. Laktoositon. Gluteeniton.' WHERE tuotenimi = 'Omenamehu';
 UPDATE tuote SET kuvaus = 'Raikas sekä luonnonmukainen hedelmämehu tuorepuristetuista appelsiineista, 2 dl. Laktoositon. Gluteeniton.' WHERE tuotenimi = 'Appelsiinimehu';
 -- Teet:
 UPDATE tuote SET kuvaus = 'Musta teesekoitus, joka maustetaan bergamottiöljyllä. Eräs maailman suosituimmista teesekoituksista, noin 2 dl. Laktoositon. Gluteeniton.' WHERE tuotenimi = 'Earl Grey';
