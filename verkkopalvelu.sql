@@ -73,7 +73,7 @@ UPDATE tuote SET kuvaus = 'Espressoa, maitoa, suklaamakusiirappia ja jääpaloja
 UPDATE tuote SET kuvaus = 'Amerikkalaistyylinen, kostean mehevä suklaaleivonnainen, josta leikataan perinteisesti neliönmuotoisia annospaloja, noin 80 g.' WHERE tuotenimi = 'Brownie';
 UPDATE tuote SET kuvaus = 'Pullataikinaan leivottu herkkuviineri, jossa päällä reilusti hilloa. Pehmeä vaniljakreemi ja pomadakoristelu kruunaa viimeistelyn, noin 100 g. Laktoositon.' WHERE tuotenimi = 'Viineri';
 UPDATE tuote SET kuvaus = 'Amerikkalaisten leivonnaisten klassikko. Iso, maitosuklaahippuja sisältävä keksi, noin 80 g. Laktoositon.' WHERE tuotenimi = 'Chocolate Chip Cookie';
-UPDATE tuote SET kuvaus = 'Pehmeän makuinen, keväisesen värikkäästi koristeltu leivos., noin 80 g. Laktoositon.' WHERE tuotenimi = 'Pääsiäisleivos';
+UPDATE tuote SET kuvaus = 'Pehmeän makuinen, keväisen värikkäästi koristeltu leivos., noin 80 g. Laktoositon.' WHERE tuotenimi = 'Pääsiäisleivos';
 UPDATE tuote SET kuvaus = 'Berliinimunkki on lasten ja aikuisten suosikkimunkki. Päällä mansikkainen kuorrute ja sisällä vadelmahillo, noin 80 g.' WHERE tuotenimi = 'Berliininmunkki';
 UPDATE tuote SET kuvaus = 'Maistuvasta pullataikinasta valmistettu pulla, jonka kruunaa voisilmä keskellä, kuorrutettuna voi-sokeriseoksella, noin 80 g.' WHERE tuotenimi = 'Voisilmäpulla';
 -- Muut juomat:
@@ -81,16 +81,17 @@ UPDATE tuote SET kuvaus = 'Täyteläinen Fazer kaakao pehmeäksi vaahdotetulla m
 UPDATE tuote SET kuvaus = 'Maailman parasta, suomalaista pohjavettä ja jääpaloja, noin 4 dl.' WHERE tuotenimi = 'Jäävesi';
 UPDATE tuote SET kuvaus = 'Hartwall Jaffa on aito ja alkuperäinen suomalainen raikas appelsiinimakuinen virvoitusjuoma jääpaloilla, 5 dl. Laktoositon. Gluteeniton.' WHERE tuotenimi = 'Jaffa';
 UPDATE tuote SET kuvaus = 'Suomen ja koko maailman ylivoimaisesti suosituinta virvoitusjuomaa Coca-Colaa sekä jääpaloja, 5 dl. Laktoositon. Gluteeniton.' WHERE tuotenimi = 'Cola';
-UPDATE tuote SET kuvaus = 'Herkullinen omenamehu tuorepuristetuista, lujonnomukaisesti viljellyistä omenoista, 2 dl. Laktoositon. Gluteeniton.' WHERE tuotenimi = 'Omenamehu';
+UPDATE tuote SET kuvaus = 'Herkullinen omenamehu tuorepuristetuista, luonnomukaisesti viljellyistä omenoista, 2 dl. Laktoositon. Gluteeniton.' WHERE tuotenimi = 'Omenamehu';
 UPDATE tuote SET kuvaus = 'Raikas sekä luonnonmukainen hedelmämehu tuorepuristetuista appelsiineista, 2 dl. Laktoositon. Gluteeniton.' WHERE tuotenimi = 'Appelsiinimehu';
 -- Teet:
 UPDATE tuote SET kuvaus = 'Musta teesekoitus, joka maustetaan bergamottiöljyllä. Eräs maailman suosituimmista teesekoituksista, noin 2 dl. Laktoositon. Gluteeniton.' WHERE tuotenimi = 'Earl Grey';
 UPDATE tuote SET kuvaus = 'Kamomillasaunion kuivatuista mykeröistä valmistettu tee, jolla mieltä ja kehoa rauhoittava sekä vatsaa vaaliva vaikutus, 2 dl. Laktoositon. Gluteeniton.' WHERE tuotenimi = 'Kamomillatee';
 UPDATE tuote SET kuvaus = 'Maailman suosituin teelaatu, jota valmistettaessa ei teelehtiä hapeteta lainkaan, jolloin niiden sisältämät luontaiset aineet säilyvät paremmin, 2 dl. Laktoositon. Gluteeniton.' WHERE tuotenimi = 'Vihreä tee';
-UPDATE tuote SET kuvaus = 'Herkkä ja pehmeän makuinen valkoinen tee valmistetaan nuorista teelehdistä, jotka yksinekrtaisesti höyrytetään ja kuivataan. Minimalistisesta käsittelystä johtuen, valkoinen tee on luonnonmukaisin teevaihtoehto, 2 dl. Laktoositon. Gluteeniton.' WHERE tuotenimi = 'Valkoinen tee';
+UPDATE tuote SET kuvaus = 'Herkkä ja pehmeän makuinen valkoinen tee valmistetaan nuorista teelehdistä, jotka yksinkertaisesti höyrytetään ja kuivataan. Minimalistisesta käsittelystä johtuen, valkoinen tee on luonnonmukaisin teevaihtoehto, 2 dl. Laktoositon. Gluteeniton.' WHERE tuotenimi = 'Valkoinen tee';
 UPDATE tuote SET kuvaus = 'Oolong on mustan ja vihreän teen välimuoto. Oolong tunnetaan sen selvän hedelmäisestä mausta. Oolong-lehdet läpikäyvät maltillisen valmistusprosessin, jossa ne lakastuvat, hapettuvat ja kuivuvat, 2 dl. Laktoositon. Gluteeniton.' WHERE tuotenimi = 'Oolong';
 UPDATE tuote SET kuvaus = 'Luontaisesti kofeiinitonta Rooibosta kutsutaan myös punaiseksi teeksi, mutta todellisuudessa Rooibos ei ole tee, vaan kuuluu hernekasvien sukuun. Rooibos-tee hapetetaan samaan tapaan kuin musta tee, 2 dl. Laktoositon. Gluteeniton.' WHERE tuotenimi = 'Rooibos';
 
+<<<<<<< HEAD
 
 create table tilaus (
 tilausnro int primary key auto_increment,
@@ -108,4 +109,8 @@ tuotenro int,
 kpl int,
 constraint pk primary key (tilausnro, rivinro),
 FOREIGN KEY(tuotenro) REFERENCES tuote(tuotenro)
+=======
+create table uutiskirja (
+    sahkpost varchar(255)
+>>>>>>> 67267d6f89def988299472cac406cee2438b3b4a
 );
