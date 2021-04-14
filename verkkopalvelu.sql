@@ -112,8 +112,8 @@ create table uutiskirja (
     sahkpost varchar(255)
 );
 
--- Luodaan tietokantaan taulu käyttäjälle:
-create table kayttaja (
+-- Luodaan tietokantaan taulu admin käyttäjälle:
+create table admin_kayttaja (
 kayttajaId int primary key auto_increment,
 kayttajanimi varchar (255) NOT NULL,
 salasana varchar (255) NOT NULL);
