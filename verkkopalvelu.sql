@@ -91,6 +91,30 @@ UPDATE tuote SET kuvaus = 'Herkkä ja pehmeän makuinen valkoinen tee valmisteta
 UPDATE tuote SET kuvaus = 'Oolong on mustan ja vihreän teen välimuoto. Oolong tunnetaan sen selvän hedelmäisestä mausta. Oolong-lehdet läpikäyvät maltillisen valmistusprosessin, jossa ne lakastuvat, hapettuvat ja kuivuvat, 2 dl. Laktoositon. Gluteeniton.' WHERE tuotenimi = 'Oolong';
 UPDATE tuote SET kuvaus = 'Luontaisesti kofeiinitonta Rooibosta kutsutaan myös punaiseksi teeksi, mutta todellisuudessa Rooibos ei ole tee, vaan kuuluu hernekasvien sukuun. Rooibos-tee hapetetaan samaan tapaan kuin musta tee, 2 dl. Laktoositon. Gluteeniton.' WHERE tuotenimi = 'Rooibos';
 
+
+create table tilaus (
+tilausnro int primary key auto_increment,
+asnimi varchar (255) NOT NULL,
+aspuh varchar (255) NOT NULL,
+lisatiedot varchar (255),
+tilauspvm timestamp default CURRENT_TIMESTAMP,
+tila varchar (255) NOT NULL
+);
+
+create table tilausrivi(
+tilausnro int,
+rivinro int,
+tuotenro int,
+kpl int,
+constraint pk primary key (tilausnro, rivinro),
+FOREIGN KEY(tuotenro) REFERENCES tuote(tuotenro)
 create table uutiskirja (
     sahkpost varchar(255)
 );
+
+-- Luodaan tietokantaan taulu admin käyttäjälle:
+create table admin_kayttaja (
+kayttajaId int primary key auto_increment,
+kayttajanimi varchar (255) NOT NULL,
+salasana varchar (255) NOT NULL);
+
