@@ -69,7 +69,7 @@ UPDATE tuote SET kuvaus = 'Espressoa, kuumaa maitoa ja maitovaahto, noin 2,5 dl.
 UPDATE tuote SET kuvaus = 'Täydellinen yhdistelmä espressoa ja lämmintä, höyryllä kevyesti vaahdotettua maitoa, noin 4 dl. Gluteeniton.' WHERE tuotenimi = 'Latte';
 UPDATE tuote SET kuvaus = 'Espressoa, johon on sekoitettu kuumaa vettä, noin 2 dl. Gluteeniton.' WHERE tuotenimi = 'Americano';
 UPDATE tuote SET kuvaus = 'Espressoa, maitoa, suklaamakusiirappia ja jääpaloja, noin 4 dl. Gluteeniton.' WHERE tuotenimi = 'Jäälatte';
---Leivokset:
+-- Leivokset:
 UPDATE tuote SET kuvaus = 'Amerikkalaistyylinen, kostean mehevä suklaaleivonnainen, josta leikataan perinteisesti neliönmuotoisia annospaloja, noin 80 g.' WHERE tuotenimi = 'Brownie';
 UPDATE tuote SET kuvaus = 'Pullataikinaan leivottu herkkuviineri, jossa päällä reilusti hilloa. Pehmeä vaniljakreemi ja pomadakoristelu kruunaa viimeistelyn, noin 100 g. Laktoositon.' WHERE tuotenimi = 'Viineri';
 UPDATE tuote SET kuvaus = 'Amerikkalaisten leivonnaisten klassikko. Iso, maitosuklaahippuja sisältävä keksi, noin 80 g. Laktoositon.' WHERE tuotenimi = 'Chocolate Chip Cookie';
@@ -115,7 +115,7 @@ constraint pk primary key (tilausnro, rivinro),
 FOREIGN KEY(tuotenro) REFERENCES tuote(tuotenro)
 );
 
-insert into tilausrivi values(1,1,1,1),(1,2,24,1)
+insert into tilausrivi values(1,1,1,1),(1,2,24,1);
 
 -- Luodaan tietokantaan taulu admin käyttäjälle:
 create table admin_kayttaja (
