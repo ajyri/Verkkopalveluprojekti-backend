@@ -123,4 +123,7 @@ kayttajaId int primary key auto_increment,
 kayttajanimi varchar (255) NOT NULL,
 salasana varchar (255) NOT NULL);
 
+-- Luodaan admin-käyttäjä
+INSERT INTO admin_kayttaja (kayttajanimi,salasana) VALUES ('admin', '$2y$10$uhJE1VMkh5xAjPV.F03NyO7T4zj82raU1bSgjCqwD0iSQkebVAQd.');
+
 
