@@ -23,3 +23,16 @@ function returnError(PDOException $pdoex) {
     echo json_encode($error);
     exit;
 }
+
+function returnImageError(string $message): void {
+    header('HTTP/1.1 500 Internal Server Error');
+    $error = array('error' => $message);
+    echo json_encode($error);
+    exit;
+  }
+  function returnAdminError(PDOException $pdoex): void {
+    header('HTTP/1.1 500 Internal Server Error');
+    $error = array('error' => $pdoex -> getMessage());
+    echo json_encode($error);
+    exit;
+  }

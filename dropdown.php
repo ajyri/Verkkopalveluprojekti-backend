@@ -6,7 +6,7 @@ require_once './inc/headers.php';
 
 try {
     $db = openDb();
-    $sql = "select * from tuoteryhma";
+    $sql = "select * from tuoteryhma order by trnro";
     $query = $db->query($sql);
     $results = $query->fetchAll(PDO::FETCH_ASSOC);
     header('HTTP/1.1 200 OK');

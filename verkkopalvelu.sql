@@ -69,7 +69,7 @@ UPDATE tuote SET kuvaus = 'Espressoa, kuumaa maitoa ja maitovaahto, noin 2,5 dl.
 UPDATE tuote SET kuvaus = 'Täydellinen yhdistelmä espressoa ja lämmintä, höyryllä kevyesti vaahdotettua maitoa, noin 4 dl. Gluteeniton.' WHERE tuotenimi = 'Latte';
 UPDATE tuote SET kuvaus = 'Espressoa, johon on sekoitettu kuumaa vettä, noin 2 dl. Gluteeniton.' WHERE tuotenimi = 'Americano';
 UPDATE tuote SET kuvaus = 'Espressoa, maitoa, suklaamakusiirappia ja jääpaloja, noin 4 dl. Gluteeniton.' WHERE tuotenimi = 'Jäälatte';
---Leivokset:
+-- Leivokset:
 UPDATE tuote SET kuvaus = 'Amerikkalaistyylinen, kostean mehevä suklaaleivonnainen, josta leikataan perinteisesti neliönmuotoisia annospaloja, noin 80 g.' WHERE tuotenimi = 'Brownie';
 UPDATE tuote SET kuvaus = 'Pullataikinaan leivottu herkkuviineri, jossa päällä reilusti hilloa. Pehmeä vaniljakreemi ja pomadakoristelu kruunaa viimeistelyn, noin 100 g. Laktoositon.' WHERE tuotenimi = 'Viineri';
 UPDATE tuote SET kuvaus = 'Amerikkalaisten leivonnaisten klassikko. Iso, maitosuklaahippuja sisältävä keksi, noin 80 g. Laktoositon.' WHERE tuotenimi = 'Chocolate Chip Cookie';
@@ -94,3 +94,36 @@ UPDATE tuote SET kuvaus = 'Luontaisesti kofeiinitonta Rooibosta kutsutaan myös 
 create table uutiskirja (
     sahkpost varchar(255)
 );
+
+create table tilaus (
+tilausnro int primary key auto_increment,
+asnimi varchar (255) NOT NULL,
+aspuh varchar (255) NOT NULL,
+lisatiedot varchar (255),
+tilauspvm timestamp default CURRENT_TIMESTAMP,
+tila varchar (255)
+);
+
+insert into tilaus(asnimi, aspuh, lisatiedot) values('Testi','0401234567','Tässä on lisätietoja tilauksesta');
+
+create table tilausrivi(
+tilausnro int,
+rivinro int,
+tuotenro int,
+kpl int,
+constraint pk primary key (tilausnro, rivinro),
+FOREIGN KEY(tuotenro) REFERENCES tuote(tuotenro)
+);
+
+insert into tilausrivi values(1,1,1,1),(1,2,24,1);
+
+-- Luodaan tietokantaan taulu admin käyttäjälle:
+create table admin_kayttaja (
+kayttajaId int primary key auto_increment,
+kayttajanimi varchar (255) NOT NULL,
+salasana varchar (255) NOT NULL);
+
+-- Luodaan admin-käyttäjä
+INSERT INTO admin_kayttaja (kayttajanimi,salasana) VALUES ('admin', '$2y$10$uhJE1VMkh5xAjPV.F03NyO7T4zj82raU1bSgjCqwD0iSQkebVAQd.');
+
+
