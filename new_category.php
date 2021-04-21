@@ -7,6 +7,7 @@ $new_category = filter_var($input->trnimi,FILTER_SANITIZE_STRING);
 
 try {
     $db = openDb();
+    $db->beginTransaction();
     $query = $db->prepare("INSERT INTO tuoteryhma (trnimi) values ((:trnimi))");
     $query->bindValue(':trnimi',$new_category,PDO::PARAM_STR);
 
@@ -16,7 +17,10 @@ try {
     $data = array('trnimi' => $new_category);
     echo json_encode($data);
 
-} catch (PDOException $pdoex) {
+    $db->commit();
+} 
+
+catch (PDOException $pdoex) {
     returnError($pdoex);
 }
 

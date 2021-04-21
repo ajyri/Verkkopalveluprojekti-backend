@@ -11,6 +11,7 @@ $trnro = filter_var($input->trnro,FILTER_SANITIZE_STRING);
 
 try {
     $db = openDb();
+    $db->beginTransaction();
     $query = $db->prepare("INSERT INTO tuote (tuotenimi,kuvaus,hinta,kuva,trnro) values (:tuotenimi,:kuvaus,:hinta,:kuva,:trnro)");
     $query->bindValue(':tuotenimi',$new_name,PDO::PARAM_STR);
     $query->bindValue(':kuvaus',$new_description,PDO::PARAM_STR);
@@ -23,7 +24,7 @@ try {
     header ('HTTP/1.1 200 OK');
     $data = array('tuotenimi' => $new_name,'kuvaus' => $new_description, 'hinta' => $new_price, 'kuva' => $new_picture, 'trnro' => $trnro);
     echo json_encode($data);
-
+    $db->commit();
 } catch (PDOException $pdoex) {
     returnError($pdoex);
 }
