@@ -8,7 +8,7 @@ $trnro = filter_var($input->trnro,FILTER_SANITIZE_STRING);
 
 try {
     $db = openDb();
-    $query = $db->prepare("UPDATE tuoteryhma SET (trnimi = :trnimi) where (trnro=:trnro)");
+    $query = $db->prepare("UPDATE tuoteryhma SET trnimi = :trnimi where trnro=:trnro");
     $query->bindValue(':trnimi',$trnimi,PDO::PARAM_STR);
     $query->bindValue(':trnro',$trnro,PDO::PARAM_INT);
 
